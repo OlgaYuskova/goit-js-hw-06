@@ -27,10 +27,12 @@ console.log(galleryEl);
 galleryEl.insertAdjacentHTML('beforeend', makeListImg);
 
 const imageItemEl = document.querySelector(".gallery");
-imageItemEl.style.display = 'flex';
-imageItemEl.style.listStyleType = 'none';
-imageItemEl.style.flexDirection = 'column';
-imageItemEl.style.alignItems = 'center';
-imageItemEl.style.gap = '50px';
+imageItemEl.style.cssText = `
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+`;
 
 
